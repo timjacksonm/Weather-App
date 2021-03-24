@@ -11,10 +11,13 @@ function kelvinToCelcius(valNum) {
 }
 const weatherCard = function displayCard(WeatherDataObject) {
   const weatherData = WeatherDataObject;
-  contentContainer.appendChild(document.createElement('h1')).textContent =
-    weatherData.weather[0].description;
   const fahrTemp = kelvinToFahrenheit(weatherData.main.temp);
   const celcTemp = kelvinToCelcius(weatherData.main.temp);
+  contentContainer.appendChild(document.createElement('h1')).textContent =
+    weatherData.weather[0].description;
+  contentContainer.appendChild(
+    document.createElement('p')
+  ).textContent = `${fahrTemp} ${celcTemp}`;
   console.log(fahrTemp, celcTemp, weatherData.main.temp);
 };
 
