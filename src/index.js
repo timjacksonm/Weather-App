@@ -1,23 +1,40 @@
 import './sass/main.scss';
-import { weatherCard } from './modules/display';
+import { todayCard } from './modules/todayCard';
+import { extendedForcastCard } from './modules/extendedCard';
 
-function addStr(str, index, stringToAdd) {
+function addStr(str, index, stringToAdd, type) {
+  const temp = type;
   const newString =
-    str.substring(0, index) + stringToAdd + str.substring(index, str.length);
+    str.substring(0, index) +
+    stringToAdd +
+    temp +
+    str.substring(index, str.length);
   return newString;
 }
 const searchBar = document.querySelector('#searchBar');
 async function getWeather(string) {
-  const url =
+  const urlToday =
     'http://api.openweathermap.org/data/2.5/weather?q=&appid=bb5bd83c82003b1aeb68a738c2b0302e';
-  const searchString = addStr(url, 49, string);
+  const urlExtended =
+    'http://api.openweathermap.org/data/2.5/forecast?q=&appid=bb5bd83c82003b1aeb68a738c2b0302e';
+  const searchToday = addStr(urlToday, 49, string, '&units=imperial'); //metric for celcius
+  const searchExtended = addStr(urlExtended, 50, string, '&units=imperial'); //metric for celcius
+
   try {
-    const response = await fetch(searchString, { mode: 'cors' });
-    const weatherData = await response.json();
-    weatherCard(weatherData);
+    const todayResponse = await fetch(searchToday, { mode: 'cors' });
+    const todayWeatherData = await todayResponse.json();
+    const extendedResponse = await fetch(searchExtended);
+    const extendedWeatherData = await extendedResponse.json();
+
+    const weatherDataPromise = await Promise.all([
+      todayWeatherData,
+      extendedWeatherData,
+    ]);
+    todayCard(weatherDataPromise[0]);
+    extendedForcastCard(weatherDataPromise[1]);
   } catch (err) {
     // pop up box indicating if outside of US add , country code
-    return console.log(err);
+    console.log(err);
   }
 }
 searchBar.addEventListener('keyup', (e) => {
