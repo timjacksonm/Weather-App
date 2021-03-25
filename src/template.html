@@ -25,7 +25,6 @@
         />
       </g>
     </svg>
-
     <div class="searchContainer">
       <label for="searchBar">
         <input
@@ -39,11 +38,265 @@
         <button><i class="fa fa-search"></i></button>
       </label>
     </div>
-    <main id="mainCard">
+    <main id="cardContainer">
+      <div id="currentDay" class="currentDay">Monday</div>
       <div class="todayCard">
         <div id="todayWeatherStatus" class="weatherStatus">Sunny</div>
         <div id="currentTemp" class="currentTemp">24°F</div>
         <div id="cityState" class="location">Instanbul, Turkey</div>
+      </div>
+      <div class="statistics">
+        <div class="feelTemp">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg
+            version="1.1"
+            id="Layer_2"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 64 64"
+            style="enable-background: new 0 0 64 64"
+            xml:space="preserve"
+          >
+            <style type="text/css">
+              .st0 {
+                fill: #202020;
+              }
+            </style>
+            <g>
+              <path
+                class="st0"
+                d="M42,35.5V10c0-5.5-4.5-10-10-10S22,4.5,22,10v25.5c-3.8,3-6,7.6-6,12.5c0,8.8,7.2,16,16,16s16-7.2,16-16
+		C48,43.1,45.8,38.5,42,35.5z M32,60c-6.6,0-12-5.4-12-12c0-3.9,1.9-7.6,5.1-9.8l0.9-0.6V10c0-3.3,2.7-6,6-6s6,2.7,6,6v27.6l0.9,0.6
+		c3.2,2.2,5.1,5.9,5.1,9.8C44,54.6,38.6,60,32,60z"
+              />
+              <path
+                class="st0"
+                d="M34,40.3V18c0-1.1-0.9-2-2-2s-2,0.9-2,2v22.3c-3.4,0.9-6,4-6,7.7c0,4.4,3.6,8,8,8s8-3.6,8-8
+		C40,44.3,37.4,41.2,34,40.3z M32,52c-2.2,0-4-1.8-4-4s1.8-4,4-4s4,1.8,4,4S34.2,52,32,52z"
+              />
+            </g>
+          </svg>
+
+          <h5>FEELS LIKE</h5>
+          <div id="feelsLike">24°F</div>
+        </div>
+        <div class="wind">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg
+            version="1.1"
+            id="Layer_2"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 64 64"
+            style="enable-background: new 0 0 64 64"
+            xml:space="preserve"
+          >
+            <style type="text/css">
+              .st0 {
+                fill: #202020;
+              }
+            </style>
+            <g>
+              <path
+                class="st0"
+                d="M32,38H8c-2.2,0-4-1.8-4-4s1.8-4,4-4h26c6.6,0,12-5.4,12-12S40.6,6,34,6c-1.1,0-2,0.9-2,2s0.9,2,2,2
+		c4.4,0,8,3.6,8,8s-3.6,8-8,8H8c-4.4,0-8,3.6-8,8s3.6,8,8,8h24c3.3,0,6,2.7,6,6s-2.7,6-6,6c-1.1,0-2,0.9-2,2s0.9,2,2,2
+		c5.5,0,10-4.5,10-10S37.5,38,32,38z"
+              />
+              <path
+                class="st0"
+                d="M12,20c0,1.1,0.9,2,2,2h12c3.3,0,6-2.7,6-6s-2.7-6-6-6c-1.1,0-2,0.9-2,2s0.9,2,2,2c1.1,0,2,0.9,2,2s-0.9,2-2,2
+		H14C12.9,18,12,18.9,12,20z"
+              />
+              <path
+                class="st0"
+                d="M42,32c0,1.1,0.9,2,2,2h6c5.5,0,10-4.5,10-10c0-5.5-4.5-10-10-10c-1.1,0-2,0.9-2,2s0.9,2,2,2c3.3,0,6,2.7,6,6
+		c0,3.3-2.7,6-6,6h-6C42.9,30,42,30.9,42,32z"
+              />
+              <path
+                class="st0"
+                d="M56,38H44c-1.1,0-2,0.9-2,2s0.9,2,2,2h12c2.2,0,4,1.8,4,4c0,2.2-1.8,4-4,4c-1.1,0-2,0.9-2,2s0.9,2,2,2
+		c4.4,0,8-3.6,8-8C64,41.6,60.4,38,56,38z"
+              />
+            </g>
+          </svg>
+
+          <h5>WIND SPEED</h5>
+          <div id="wind">NE 15 mph</div>
+        </div>
+        <div class="humidity">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg
+            version="1.1"
+            id="Layer_2"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 64 64"
+            style="enable-background: new 0 0 64 64"
+            xml:space="preserve"
+          >
+            <style type="text/css">
+              .st0 {
+                fill: #202020;
+              }
+            </style>
+            <g>
+              <path
+                class="st0"
+                d="M32,64c-11.9,0-21.6-9.9-21.6-22c0-0.5,0-1.1,0.1-1.7c0.1-1.8,0.5-3.6,1-5.2c4-14.3,18.3-32.4,18.9-33.1L32,0
+		l1.5,1.9c0.6,0.8,14.9,18.9,19,33.2c0.5,1.6,0.9,3.4,1,5.2c0.1,0.6,0.1,1.2,0.1,1.7C53.6,54.1,43.9,64,32,64z M32,6.4
+		c-3.8,5.1-13.6,18.9-16.7,29.8c-0.5,1.5-0.8,2.9-0.9,4.4c0,0.5-0.1,1-0.1,1.4c0,10,7.9,18.1,17.7,18.1S49.7,52,49.7,42
+		c0-0.4,0-0.8-0.1-1.3l0,0c-0.1-1.5-0.4-3-0.8-4.3C45.6,25.3,35.8,11.5,32,6.4z"
+              />
+              <path
+                class="st0"
+                d="M26.1,52.2c-0.3,0-0.7-0.1-1-0.3c-0.9-0.6-1.2-1.8-0.7-2.7l11.8-19.6c0.6-0.9,1.8-1.2,2.7-0.7
+		c0.9,0.6,1.2,1.8,0.7,2.7L27.8,51.3C27.4,51.9,26.8,52.2,26.1,52.2z"
+              />
+              <path
+                class="st0"
+                d="M26.1,38.5c-3.2,0-5.9-2.6-5.9-5.9s2.6-5.9,5.9-5.9s5.9,2.6,5.9,5.9S29.4,38.5,26.1,38.5z M26.1,30.6
+		c-1.1,0-2,0.9-2,2c0,1.1,0.9,2,2,2c1.1,0,2-0.9,2-2C28.1,31.5,27.2,30.6,26.1,30.6z"
+              />
+              <path
+                class="st0"
+                d="M37.9,54.2c-3.2,0-5.9-2.6-5.9-5.9c0-3.2,2.6-5.9,5.9-5.9c3.2,0,5.9,2.6,5.9,5.9
+		C43.8,51.6,41.1,54.2,37.9,54.2z M37.9,46.4c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S39,46.4,37.9,46.4z"
+              />
+            </g>
+          </svg>
+
+          <h5>HUMIDITY</h5>
+          <div id="humidity">76%</div>
+        </div>
+        <div class="sunrise">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg
+            version="1.1"
+            id="Layer_2"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 64 64"
+            style="enable-background: new 0 0 64 64"
+            xml:space="preserve"
+          >
+            <style type="text/css">
+              .st0 {
+                fill: #202020;
+              }
+            </style>
+            <g>
+              <path
+                class="st0"
+                d="M32,22c1.1,0,2-0.9,2-2v-8c0-1.1-0.9-2-2-2s-2,0.9-2,2v8C30,21.1,30.9,22,32,22z"
+              />
+              <path
+                class="st0"
+                d="M50,40c0,1.1,0.9,2,2,2h8c1.1,0,2-0.9,2-2s-0.9-2-2-2h-8C50.9,38,50,38.9,50,40z"
+              />
+              <path
+                class="st0"
+                d="M4,42h8c1.1,0,2-0.9,2-2s-0.9-2-2-2H4c-1.1,0-2,0.9-2,2S2.9,42,4,42z"
+              />
+              <path
+                class="st0"
+                d="M2,54h60c1.1,0,2-0.9,2-2s-0.9-2-2-2H34v-9.2l2.6,2.6C37,43.8,37.5,44,38,44s1-0.2,1.4-0.6
+		c0.8-0.8,0.8-2,0-2.8L32,33.2l-1.4,1.4c0,0,0,0,0,0l-6,6c-0.8,0.8-0.8,2,0,2.8c0.8,0.8,2,0.8,2.8,0l2.6-2.6V50H2c-1.1,0-2,0.9-2,2
+		S0.9,54,2,54z"
+              />
+              <path
+                class="st0"
+                d="M17,27.8c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8l-5.7-5.7c-0.8-0.8-2-0.8-2.8,0
+		c-0.8,0.8-0.8,2,0,2.8L17,27.8z"
+              />
+              <path
+                class="st0"
+                d="M45.6,28.4c0.5,0,1-0.2,1.4-0.6l5.7-5.7c0.8-0.8,0.8-2,0-2.8s-2-0.8-2.8,0L44.1,25c-0.8,0.8-0.8,2,0,2.8
+		C44.5,28.2,45,28.4,45.6,28.4z"
+              />
+              <path
+                class="st0"
+                d="M18.8,44.7c0.4,1,1.5,1.6,2.6,1.2c1-0.4,1.6-1.5,1.2-2.6C22.2,42.3,22,41.1,22,40c0-5.5,4.5-10,10-10
+		s10,4.5,10,10c0,1.2-0.2,2.3-0.6,3.4c-0.4,1,0.2,2.2,1.2,2.6c0.2,0.1,0.5,0.1,0.7,0.1c0.8,0,1.6-0.5,1.9-1.3
+		c0.6-1.5,0.9-3.2,0.9-4.8c0-7.7-6.3-14-14-14s-14,6.3-14,14C18,41.6,18.3,43.2,18.8,44.7z"
+              />
+            </g>
+          </svg>
+
+          <h5>SUNRISE</h5>
+          <div id="sunrise">2:23 pm</div>
+        </div>
+        <div class="sunset">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg
+            version="1.1"
+            id="Layer_2"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 64 64"
+            style="enable-background: new 0 0 64 64"
+            xml:space="preserve"
+          >
+            <style type="text/css">
+              .st0 {
+                fill: #202020;
+              }
+            </style>
+            <g>
+              <path
+                class="st0"
+                d="M32,14.6c1.1,0,2-0.9,2-2v-8c0-1.1-0.9-2-2-2s-2,0.9-2,2v8C30,13.7,30.9,14.6,32,14.6z"
+              />
+              <path
+                class="st0"
+                d="M50,32.6c0,1.1,0.9,2,2,2h8c1.1,0,2-0.9,2-2s-0.9-2-2-2h-8C50.9,30.6,50,31.5,50,32.6z"
+              />
+              <path
+                class="st0"
+                d="M4,34.6h8c1.1,0,2-0.9,2-2s-0.9-2-2-2H4c-1.1,0-2,0.9-2,2S2.9,34.6,4,34.6z"
+              />
+              <path
+                class="st0"
+                d="M2,44.6h28v9.2l-2.6-2.6c-0.8-0.8-2-0.8-2.8,0s-0.8,2,0,2.8l7.4,7.4l1.4-1.4c0,0,0,0,0,0l6-6
+		c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0L34,53.8v-9.2h28c1.1,0,2-0.9,2-2s-0.9-2-2-2H2c-1.1,0-2,0.9-2,2S0.9,44.6,2,44.6z"
+              />
+              <path
+                class="st0"
+                d="M17,20.4c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8l-5.7-5.7c-0.8-0.8-2-0.8-2.8,0
+		c-0.8,0.8-0.8,2,0,2.8L17,20.4z"
+              />
+              <path
+                class="st0"
+                d="M45.6,21c0.5,0,1-0.2,1.4-0.6l5.7-5.7c0.8-0.8,0.8-2,0-2.8s-2-0.8-2.8,0l-5.7,5.7c-0.8,0.8-0.8,2,0,2.8
+		C44.5,20.8,45,21,45.6,21z"
+              />
+              <path
+                class="st0"
+                d="M18.8,37.3c0.4,1,1.5,1.6,2.6,1.2c1-0.4,1.6-1.5,1.2-2.6c-0.4-1.1-0.6-2.2-0.6-3.4c0-5.5,4.5-10,10-10
+		s10,4.5,10,10c0,1.2-0.2,2.3-0.6,3.4c-0.4,1,0.2,2.2,1.2,2.6c0.2,0.1,0.5,0.1,0.7,0.1c0.8,0,1.6-0.5,1.9-1.3
+		c0.6-1.5,0.9-3.2,0.9-4.8c0-7.7-6.3-14-14-14s-14,6.3-14,14C18,34.2,18.3,35.8,18.8,37.3z"
+              />
+            </g>
+          </svg>
+
+          <h5>SUNSET</h5>
+          <div id="sunset">5:24 am</div>
+        </div>
       </div>
     </main>
     <footer class="footer">
