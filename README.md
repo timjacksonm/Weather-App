@@ -8,6 +8,8 @@
 - [✔️] Add any styling you like!
 
 **Optional Extra Credit**
+- [✔️] learn the difference between em & rem units and implement them into the project instead of usign px for everything.
+- [✔️] learn the different positions you can apply to an element for example position: absolute  - position: relative. Use in project.
 - [] Add a 'loading' component that displays from the time the form is submitted until the information comes back from the API.
 - [] Review the different syntax used for SASS and implement SASS into the project instead of normal CSS.
 - [] Add extended forcast.
