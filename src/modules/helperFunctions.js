@@ -20,5 +20,14 @@ const degToString = function degToCompass(num) {
   ];
   return arr[val % 16];
 };
+function addStringToUrl(str, index, stringToAdd, type) {
+  const temp = type;
+  const newString =
+    str.substring(0, index) +
+    stringToAdd +
+    temp +
+    str.substring(index, str.length);
+  return newString;
+}
 
-export { degToString };
+export { degToString, addStringToUrl };

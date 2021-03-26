@@ -69,6 +69,7 @@ html {
   }
   .currentTemp {
     font-size: 3em;
+    color: #b67c10;
   }
   .location {
     font-size: 1.5em;
@@ -99,12 +100,12 @@ html {
   .humidity,
   .sunrise,
   .sunset {
-    margin: 0.5rem !important;
+    margin: 1em !important;
   }
-  svg {
+  img {
     align-self: center;
-    width: 2.8em;
-    height: 2.8em;
+    width: 4em;
+    height: 4em;
   }
 }
 .footer {

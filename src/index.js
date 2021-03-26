@@ -1,24 +1,21 @@
 import './sass/main.scss';
 import { todayCard } from './modules/todayCard';
 import { extendedForcastCard } from './modules/extendedCard';
+import { addStringToUrl } from './modules/helperFunctions';
 
-function addStr(str, index, stringToAdd, type) {
-  const temp = type;
-  const newString =
-    str.substring(0, index) +
-    stringToAdd +
-    temp +
-    str.substring(index, str.length);
-  return newString;
-}
 const searchBar = document.querySelector('#searchBar');
 async function getWeather(string) {
   const urlToday =
     'http://api.openweathermap.org/data/2.5/weather?q=&appid=bb5bd83c82003b1aeb68a738c2b0302e';
   const urlExtended =
     'http://api.openweathermap.org/data/2.5/forecast?q=&appid=bb5bd83c82003b1aeb68a738c2b0302e';
-  const searchToday = addStr(urlToday, 49, string, '&units=imperial'); //metric for celcius
-  const searchExtended = addStr(urlExtended, 50, string, '&units=imperial'); //metric for celcius
+  const searchToday = addStringToUrl(urlToday, 49, string, '&units=imperial'); // metric for celcius
+  const searchExtended = addStringToUrl(
+    urlExtended,
+    50,
+    string,
+    '&units=imperial'
+  ); // metric for celcius
 
   try {
     const todayResponse = await fetch(searchToday, { mode: 'cors' });
