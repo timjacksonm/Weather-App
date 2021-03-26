@@ -11,11 +11,10 @@
     <title>Weather App</title>
   </head>
   <body class="content">
-    <img class="icon" src="./assets/wsymbol_0001_sunny.svg" />
+    <img id="todayIcon" class="icon" src="./assets/sunny.svg" />
     <div class="searchContainer">
       <label for="searchBar">
         <input
-          value="Hibbing"
           type="text"
           id="searchBar"
           name="searchBar"
@@ -29,35 +28,35 @@
     <main id="cardContainer">
       <div id="currentDay" class="currentDay">Today</div>
       <div class="todayCard">
-        <div id="todayWeatherStatus" class="weatherStatus">Sunny</div>
-        <div id="currentTemp" class="currentTemp">24°F</div>
-        <div id="cityState" class="location">Instanbul, Turkey</div>
+        <div id="todayWeatherStatus" class="weatherStatus"></div>
+        <div id="currentTemp" class="currentTemp"></div>
+        <div id="cityState" class="location"></div>
       </div>
       <div id="statsContainer" class="statistics">
         <div class="feelTemp">
           <img src="./assets/thermometer-2.svg" />
           <h5>FEELS LIKE</h5>
-          <div id="feelsLike">24°F</div>
+          <div id="feelsLike"></div>
         </div>
         <div class="wind">
           <img src="./assets/wind.svg" />
           <h5>WIND SPEED</h5>
-          <div id="wind">NE 15 mph</div>
+          <div id="wind"></div>
         </div>
         <div class="humidity">
           <img src="./assets/drop-percentage.svg" />
           <h5>HUMIDITY</h5>
-          <div id="humidity">76%</div>
+          <div id="humidity"></div>
         </div>
         <div class="sunrise">
           <img src="./assets/sunrise.svg" />
           <h5>SUNRISE</h5>
-          <div id="sunrise">2:23 pm</div>
+          <div id="sunrise"></div>
         </div>
         <div class="sunset">
           <img src="./assets/sunset.svg" />
           <h5>SUNSET</h5>
-          <div id="sunset">5:24 am</div>
+          <div id="sunset"></div>
         </div>
       </div>
     </main>

@@ -2,6 +2,13 @@ import './sass/main.scss';
 import { todayCard } from './modules/todayCard';
 import { extendedForcastCard } from './modules/extendedCard';
 import { addStringToUrl } from './modules/helperFunctions';
+import thunderstorms from './assets/thunderstorms.svg';
+import drizzle from './assets/drizzle.svg';
+import rain from './assets/rain.svg';
+import snow from './assets/snow.svg';
+import mistOrFog from './assets/mistorfog.svg';
+import sunny from './assets/sunny.svg';
+import clouds from './assets/clouds.svg';
 
 const searchBar = document.querySelector('#searchBar');
 async function getWeather(string) {
@@ -46,3 +53,6 @@ searchBar.addEventListener('keyup', (e) => {
     getWeather(value);
   }
 });
+
+getWeather('Flint');
+export { thunderstorms, drizzle, rain, snow, mistOrFog, sunny, clouds };
