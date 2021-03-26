@@ -54,5 +54,5 @@ searchBar.addEventListener('keyup', (e) => {
   }
 });
 
-getWeather('Flint');
+getWeather('flint');
 export { thunderstorms, drizzle, rain, snow, mistOrFog, sunny, clouds };
