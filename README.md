@@ -10,5 +10,6 @@
 **Optional Extra Credit**
 - [] Add a 'loading' component that displays from the time the form is submitted until the information comes back from the API.
 - [] Review the different syntax used for SASS and implement SASS into the project instead of normal CSS.
+- [] Add extended forcast.
 
 **View Commits on project to see changes**
