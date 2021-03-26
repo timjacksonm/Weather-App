@@ -13,13 +13,13 @@ import clouds from './assets/clouds.svg';
 const searchBar = document.querySelector('#searchBar');
 async function getWeather(string) {
   const urlToday =
-    'http://api.openweathermap.org/data/2.5/weather?q=&appid=bb5bd83c82003b1aeb68a738c2b0302e';
+    'https://api.openweathermap.org/data/2.5/weather?q=&appid=bb5bd83c82003b1aeb68a738c2b0302e';
   const urlExtended =
-    'http://api.openweathermap.org/data/2.5/forecast?q=&appid=bb5bd83c82003b1aeb68a738c2b0302e';
-  const searchToday = addStringToUrl(urlToday, 49, string, '&units=imperial'); // metric for celcius
+    'https://api.openweathermap.org/data/2.5/forecast?q=&appid=bb5bd83c82003b1aeb68a738c2b0302e';
+  const searchToday = addStringToUrl(urlToday, 50, string, '&units=imperial'); // metric for celcius
   const searchExtended = addStringToUrl(
     urlExtended,
-    50,
+    51,
     string,
     '&units=imperial'
   ); // metric for celcius
@@ -54,5 +54,5 @@ searchBar.addEventListener('keyup', (e) => {
   }
 });
 
-getWeather('flint');
+getWeather('las vegas');
 export { thunderstorms, drizzle, rain, snow, mistOrFog, sunny, clouds };
