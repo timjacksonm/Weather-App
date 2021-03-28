@@ -21,4 +21,4 @@ const degToString = function degToCompass(num) {
   return arr[val % 16];
 };
 
-export { degToString };
+export default degToString;

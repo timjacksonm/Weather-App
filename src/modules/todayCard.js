@@ -1,5 +1,5 @@
 import { format, fromUnixTime } from 'date-fns';
-import { degToString } from './helperFunctions';
+import degToString from './helperFunctions';
 import {
   thunderstorms,
   drizzle,
@@ -126,4 +126,4 @@ const todayCard = function displayCard(WeatherDataObject) {
   );
 };
 
-export { todayCard };
+export default todayCard;

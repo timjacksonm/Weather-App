@@ -1,5 +1,5 @@
 import './sass/main.scss';
-import { todayCard } from './modules/todayCard';
+import todayCard from './modules/todayCard';
 // import { extendedForcastCard } from './modules/extendedCard';
 import thunderstorms from './assets/thunderstorms.svg';
 import drizzle from './assets/drizzle.svg';

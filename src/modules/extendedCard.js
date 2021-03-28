@@ -20,4 +20,4 @@ const extendedForcastCard = function displayCards(extWeatherDataObject) {
   }
 };
 
-export { extendedForcastCard };
+export default extendedForcastCard;
