@@ -43,57 +43,54 @@ const todayCard = function displayCard(WeatherDataObject) {
   } else {
     document.getElementById('todayIcon').src = clouds;
   }
-
-  // Changes color styling based on weather.
   const root = document.documentElement;
+  function changeTextScheme(textPrimary, textSecondary) {
+    root.style.setProperty('--textPrimary', `${textPrimary}`);
+    root.style.setProperty('--textSecondary', `${textSecondary}`);
+  }
+  // Changes color styling based on weather.
   switch (key) {
     case '2':
       root.style.setProperty(
         '--Background',
         'linear-gradient(to right, #bdc7d3 45%, #d2d6db 100%)'
       );
-      root.style.setProperty('--textPrimary', '#5a6d7b');
-      root.style.setProperty('--textSecondary', '#8698a6');
+      changeTextScheme('#5a6d7b', '#8698a6');
       break;
     case '3':
       root.style.setProperty(
         '--Background',
         'linear-gradient(to right, #bdc7d3 45%, #d2d6db 100%)'
       );
-      root.style.setProperty('--textPrimary', '#5a6d7b');
-      root.style.setProperty('--textSecondary', '#8698a6');
+      changeTextScheme('#5a6d7b', '#8698a6');
       break;
     case '5':
       root.style.setProperty(
         '--Background',
         'linear-gradient(to right, #bdc7d3 45%, #d2d6db 100%)'
       );
-      root.style.setProperty('--textPrimary', '#5a6d7b');
-      root.style.setProperty('--textSecondary', '#8698a6');
+      changeTextScheme('#5a6d7b', '#8698a6');
       break;
     case '6':
       root.style.setProperty(
         '--Background',
         'linear-gradient(to right, #dfeffc 45%, rgb(240, 241, 241) 100%)'
       );
-      root.style.setProperty('--textPrimary', '#638797');
-      root.style.setProperty('--textSecondary', '#94a7b5');
+      changeTextScheme('#638797', '#94a7b5');
       break;
     case '7':
       root.style.setProperty(
         '--Background',
         'linear-gradient(to right, #dfeffc 45%, rgb(240, 241, 241) 100%)'
       );
-      root.style.setProperty('--textPrimary', '#638797');
-      root.style.setProperty('--textSecondary', '#94a7b5');
+      changeTextScheme('#638797', '#94a7b5');
       break;
     case '8':
       root.style.setProperty(
         '--Background',
         'linear-gradient(to right, #ffe28f 45%, #fffcad 100%)'
       );
-      root.style.setProperty('--textPrimary', '#b67c10');
-      root.style.setProperty('--textSecondary', '#b67c10b4');
+      changeTextScheme('#b67c10', '#b67c10b4');
       break;
     default:
       break;
