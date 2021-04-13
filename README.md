@@ -16,20 +16,19 @@
   <a href="#license">License</a>
 </p>
 
-### ✨ [Live Preview](https://timjacksonm.github.io/ToDo-List)
+### ✨ [Live Preview](https://timjacksonm.github.io/Weather-App/)
 ## Screenshots
 
 <details>
   <summary>Show Image</summary>
 
-  ![GIF demo](dist/images/)
+  ![GIF demo](src/assets/weatherDemo.gif)
 
 The below images showcase the different themes that are applied depending on current weather.
 
-  <image src="dist/images/">
-  <image src="dist/images/">
-  <image src="dist/images/">
-  <image src="dist/images/">
+  <image src="src/assets/s5preview.png">
+  <image src="src/assets/iphone8preview.png">
+  <image src="src/assets/ipadpreview.png">
 </details>
 
 ## Goals:
@@ -50,7 +49,7 @@ The below images showcase the different themes that are applied depending on cur
 
 ## Summary
 
-to be written.
+I went for more of a simple style with multiple themes. I used async and await to help control the asynchronous data I was fetching from the api's server. Started to use SASS for the first time in a project. Nesting is huge to organizing my css code, made finding certain parts so much easier. Still a few extra credit goals I would like to come back and update when I have time. A few personal extra credit goals also 'extended forcast'. Looks great on mobile! Check out the screenshots to see all 4 themes!
 
 ## Author
 
