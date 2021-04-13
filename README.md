@@ -2,7 +2,7 @@
   <br>
   Weather App
   <br>
-  <image src="dist/images/" width="50%"> 
+  <image src="src/assets/thunderstorms.svg" width="30%"> 
 </h1>
 
 <h4 align="center">Check your local weather by city name or zip code. I used JavaScript, HTML, and SASS for this project.</h4>
