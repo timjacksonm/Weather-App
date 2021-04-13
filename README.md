@@ -24,7 +24,7 @@
 
   ![GIF demo](src/assets/weatherDemo.gif)
 
-The below images showcase the different themes that are applied depending on current weather.
+The below images showcase responsive web design across a couple different devices.
 
   <image src="src/assets/s5preview.png">
   <image src="src/assets/iphone8preview.png">
